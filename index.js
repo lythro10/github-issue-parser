@@ -50,7 +50,7 @@ async function run(env, body, fs, core) {
           if (item.type === "markdown") {
             return null;
           }
-          return [toKey(item.attributes.id), item.type];
+          return [toKey(item.id), item.type];
         })
         .filter(Boolean)
     );
